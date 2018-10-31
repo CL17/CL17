@@ -2,18 +2,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="оценки игр, фильмов и сериалов"/>
-<title>Мои оценки игр, фильмов и сериалов</title>
-<link rel="stylesheet" href="style2.css">
+<meta name="description" content="оценки игр"/>
+<title>Оценки игр</title>
 <style type="text/css">
-body {font:12px Verdana, Arial; margin:25px; background-color:#212121; color:#919191; text-align: center;}
+body {font:12px Verdana, Arial; margin:25px; background-color:#1b2838; color:#acb2b8; text-align: center;}
 
-a{text-decoration:none; color:#d4d4d4; font-weight:bold; }
+table a{text-decoration:none; color:#d4d4d4; font-weight:bold;}
 
-table {width:960px; border-left:1px solid #353537; border-top:1px solid #353537; border-bottom:none; margin:0 auto 15px; background-color: #1b1b1b;}
-table th {background-color:#595959; text-align:left; color:#d4d4d4; border:1px solid #353537; border-right:none; padding:10px; text-align:center;}
-table td {padding:4px 6px 6px; border-bottom:1px solid #353537; border-right:1px solid #353537; padding:4px;}
-table tr:nth-child(even) td{background-color:#282828;}
+table {max-width:960px; border-left:1px solid #17354c; border-top:1px solid #17354c; border-bottom:none; margin:0 auto; background-color: #0d141c;}
+table th{background-color:#214b6b; text-align:left; color:#d4d4d4; border:1px solid #17354c; border-right:none; padding:10px; text-align:center; white-space:nowrap;}
+table td{border-bottom:1px solid #17354c; border-right:1px solid #17354c; padding:6px 4px;}
+table tr:nth-child(even) td{background-color:#16202d;}
 
 .desc,.asc,.sort{width:5px; height:8px; display:inline-block;background-repeat: no-repeat; padding:0px 5px 0 0;}
 	
@@ -21,412 +20,505 @@ table tr:nth-child(even) td{background-color:#282828;}
 .asc{background-image:url(images/asc.gif);}
 .sort{background-image:url(images/sort.gif);}
 
-.tabs { width: 100%; padding: 0px; margin: 0 auto; }
-.tabs>input { display:none; }
-.tabs>div { display: none;
-    padding-top: 12px;
-}
-.tabs>label {
-    display: inline-block;
-    padding: 7px;
-    margin: 0 -5px -1px 0;
-    text-align: center;
-    color: #d4d4d4;
-    border: 1px solid #353537;
-    background: #3f3f3f;
-    cursor: pointer;
-}
-.tabs>input:checked + label {
-    color: #d4d4d4;
-    border: 1px solid #353537;
-    border-bottom: 1px solid #353537;
-    background: #595959;
-}
-#tab_1:checked ~ #content_1,
-#tab_2:checked ~ #content_2,
-#tab_3:checked ~ #content_3,
-#tab_4:checked ~ #content_4,
-#tab_5:checked ~ #content_5,
-#tab_6:checked ~ #content_6,
-#tab_7:checked ~ #content_7,
-#tab_8:checked ~ #content_8,
-#tab_9:checked ~ #content_9 {display: block;}
+#sub-desc{color:#384959; padding-top:10px;}
 </style>
 </head>
 <body>
-
-<div class="tabs">
-	<input type="radio" name="inset" value="" id="tab_1" checked>
-    <label for="tab_1">Фильмы</label>
-	
-	<input type="radio" name="inset" value="" id="tab_2" checked>
-    <label for="tab_2">Сериалы</label>
-
-    <input type="radio" name="inset" value="" id="tab_3" checked>
-    <label for="tab_3">PC игры</label>
-
-	<input type="radio" name="inset" value="" id="tab_4">
-    <label for="tab_4">PSP игры</label>
-	
-    <input type="radio" name="inset" value="" id="tab_5">
-    <label for="tab_5">PlayStation 1 игры</label>
-
-    <input type="radio" name="inset" value="" id="tab_6">
-    <label for="tab_6">PlayStation 2 игры</label>
-
-    <input type="radio" name="inset" value="" id="tab_7">
-    <label for="tab_7">Wii игры</label>
-	
-	<input type="radio" name="inset" value="" id="tab_8">
-    <label for="tab_8">NES (Денди) игры</label>
-	
-	<input type="radio" name="inset" value="" id="tab_9">
-    <label for="tab_9">Wii игры</label>
-	
-	<div id="content_1"><!--Фильмы-->
-        <table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
-			<thead>
-				<tr>
-					<th width="170px"><h3>Название</h3></th>
-					<th width="70px"><h3>Оценка</h3></th>
-					<th width="110px"><h3>Дата просмотра</h3></th>
-					<th class="nosort"><h3>Комментарий</h3></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Джунгли (2017)</td>
-					<td>8</td>
-					<td>16.07.18</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>НЛО (2018)</td>
-					<td>6</td>
-					<td>23.08.18</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>VOLDEMORT: Origins of the Heir (2018)</td>
-					<td>3</td>
-					<td>09.06.18</td>
-					<td>Херня высранная идиотами.</td>
-				</tr>
-			</tbody>
-		</table>
-    </div>
-	
-	<div id="content_2"><!--Сериалы-->
-        <table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
-			<thead>
-				<tr>
-					<th width="170px"><h3>Название</h3></th>
-					<th width="70px"><h3>Оценка</h3></th>
-					<th width="120px"><h3>Дата просмотра</h3></th>
-					<th class="nosort"><h3>Комментарий</h3></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Американцы</td>
-					<td>9</td>
-					<td>02.06.18</td>
-					<td>Атмосферный, хорошо снят, отличная актерская игра и интересный сюжет.</td>
-				</tr>
-				<tr>
-					<td>Озарк</td>
-					<td>7.5</td>
-					<td>02.10.18</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Оранжевый - хит сезона</td>
-					<td>7.5</td>
-					<td>17.08.18</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Мотель Бейтса</td>
-					<td>7.5</td>
-					<td>26.04.17</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Черное зеркало</td>
-					<td>8</td>
-					<td>03.01.18</td>
-					<td>Некоторые серии крутые.</td>
-				</tr>
-				<tr>
-					<td>Родина</td>
-					<td>7.3</td>
-					<td>01.05.18</td>
-					<td></td>
-				</tr>
-				<tr>
-				<td>Конец детства</td>
-					<td>7</td>
-					<td>19.04.15</td>
-					<td>Необычный сюжет.</td>
-				</tr>
-			</tbody>
-		</table>
-    </div>
-
-    <div id="content_3"><!--PC игры-->
-
-		<table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
-			<thead>
-				<tr>
-					<th width="170px"><h3>Название</h3></th>
-					<th width="70px"><h3>Оценка</h3></th>
-					<th width="60px"><h3>Статус</h3></th>
-					<th width="110px"><h3>Дата прохож.</h3></th>
-					<th class="nosort"><h3>Комментарий</h3></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Narcosis (2017)</td>
-					<td>7.5</td>
-					<td>Пройдено</td>
-					<td>05.06.18</td>
-					<td>Очень атмосферный хоррор про подводную тему. Местами напоминает Outlast. Пройдена в VR.</td>
-				</tr>
-				<tr>
-					<td>The Simpsons Hit & Run (2003)</td>
-					<td>5</td>
-					<td>Пройдено</td>
-					<td>23.10.18</td>
-					<td>Пройдены только основные миссии.<br>
-	Геймплей однообразный, в основном это подбор предметов, на автомобиле, за время или гонки. Физика машин плохая (для 2003 года наверное пойдет).</td>
-				</tr>
-				<tr>
-					<td>Spider-Man (2001)</td>
-					<td>7</td>
-					<td>Пройдено</td>
-					<td>26.03.18</td>
-					<td>Простой приятный экшен. Уникальный гемплый.</td>
-				</tr>
-				
-				<tr>
-					<td>Rise of the Tomb Raider (2016)</td>
-					<td>9</td>
-					<td>Пройдено</td>
-					<td>17.02.16</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Harry Potter and the Philosopher's Stone (2001)</td>
-					<td>9.2</td>
-					<td>Пройдено</td>
-					<td>28.12.16</td>
-					<td>Интересный сеттинг, разнообразный гемплей, секреты, сочная гамма. Не очень дружит с мышкой.</td>
-				</tr>
-				<tr>
-					<td>Harry Potter and the Chamber of Secrets (2002)</td>
-					<td>9.2</td>
-					<td>Пройдено</td>
-					<td>30.12.17</td>
-					<td>Интересный сеттинг, разнообразный гемплей, секреты, сочная гамма.</td>
-				</tr>
-				<tr>
-					<td>Mafia III (2017)</td>
-					<td>5.5</td>
-					<td>Пройдено</td>
-					<td>08.10.17</td>
-					<td>Полная халтура. Загубили серию. </td>
-				</tr>
-				
-			</tbody>
-		</table>
-    </div>
-	
-	
-	<div id="content_4"><!--PSP-->
-
-		<table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
-			<thead>
-				<tr>
-					<th width="170px"><h3>Название</h3></th>
-					<th width="70px"><h3>Оценка</h3></th>
-					<th width="60px"><h3>Статус</h3></th>
-					<th width="110px"><h3>Дата прохож.</h3></th>
-					<th class="nosort"><h3>Комментарий</h3></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Metal Slug (1996)</td>
-					<td>7.5</td>
-					<td>Пройдено</td>
-					<td>25.09.18</td>
-					<td>Очень крутой платформер, один из лучших. Все красиво, живо и проработано, масса интересных идей.</td>
-				</tr>
-				<tr>
-					<td>Metal Slug 2 (1998)</td>
-					<td>7.6</td>
-					<td>Пройдено</td>
-					<td>23.10.18</td>
-					<td>Такой же крутой, как и Metal Slug 2, даже еще лучше. В конце доставила сцена, где враги, которых мы убивали всю игру вместе с нами убивали финального босса (сплотились против общего врага).</td>
-				</tr>
-				<tr>
-					<td>Syphon Filter: Dark Mirror (2006)</td>
-					<td>6.5</td>
-					<td>Пройдено</td>
-					<td>17.01.18</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Syphon Filter: Logan's Shadow (2007)</td>
-					<td>8</td>
-					<td>Пройдено</td>
-					<td>24.12.17</td>
-					<td>Разнообразный гемплей.</td>
-				</tr>
-			</tbody>
-		</table>
-	
-	
-    </div>
-	
-    <div id="content_5"><!--PS1-->
-			   	<table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
-			<thead>
-				<tr>
-					<th width="170px"><h3>Название</h3></th>
-					<th width="70px"><h3>Оценка</h3></th>
-					<th width="60px"><h3>Статус</h3></th>
-					<th width="110px"><h3>Дата прохож.</h3></th>
-					<th class="nosort"><h3>Комментарий</h3></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Resident Evil 1 (1996)</td>
-					<td>6.8</td>
-					<td>Пройдено</td>
-					<td>17.09.18</td>
-					<td>Затянутая, под конец уже совсем надоедает. Играется приятнее ремейка.</td>
-				</tr>
-				<tr>
-					<td>Resident Evil 2 (1998)</td>
-					<td>8.7</td>
-					<td>Пройдено</td>
-					<td>5.10.18</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Spider-Man (2000)</td>
-					<td>7</td>
-					<td>Пройдено</td>
-					<td>26.03.18</td>
-					<td>Простой приятный экшен. Уникальный гемплый.</td>
-				</tr>
-			</tbody>
-		</table>
-		* Пройдены на эмуляторе ePSXe, с горячими сохраненями.
-	   
-    </div>
-    <div id="content_6"><!--PS2-->
-	   	<table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
-			<thead>
-				<tr>
-					<th width="170px"><h3>Название</h3></th>
-					<th width="70px"><h3>Оценка</h3></th>
-					<th width="60px"><h3>Статус</h3></th>
-					<th width="110px"><h3>Дата прохож.</h3></th>
-					<th class="nosort"><h3>Комментарий</h3></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Resident Evil Code: Veronica (2002)</td>
-					<td>7</td>
-					<td>Пройдено</td>
-					<td>11.05.18</td>
-					<td>Классический Resident Evil в стиле первых трех частей. Местами интересный, местами затянутый. </td>
-				</tr>
-			</tbody>
-		</table>
-		* Пройдены на эмуляторе PCSX2, с горячими сохраненями.
-	
-	</div>
-    <div id="content_7"><!--Wii-->
-        <table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
-			<thead>
-				<tr>
-					<th width="170px"><h3>Название</h3></th>
-					<th width="70px"><h3>Оценка</h3></th>
-					<th width="60px"><h3>Статус</h3></th>
-					<th width="110px"><h3>Дата прохож.</h3></th>
-					<th class="nosort"><h3>Комментарий</h3></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Resident Evil: The Darkside Chronicles (2009)</td>
-					<td>5</td>
-					<td>Пройдено</td>
-					<td>03.09.18</td>
-					<td>Первая подобная игра пройденная мной. Обычный тупой тир по сюжетам Resident Evil. Ничего интересного придумать не смогли, хотя тут наверное ничего и не придумаешь. Есть локации из Resident Evil 2 и Code Veronica, можно на них поглядеть.</td>
-				</tr>
-			</tbody>
-		</table>
-		* Пройдены на эмуляторе Dolphin, с контроллерами Razer Hydra.
-    </div>
-	
-	<div id="content_8"><!--Денди-->
+	<h1>Игры</h1>
 	<table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
 		<thead>
 			<tr>
-				<th width="170px"><h3>Название</h3></th>
-				<th width="70px"><h3>Оценка</h3></th>
-				<th width="60px"><h3>Статус</h3></th>
-				<th width="110px"><h3>Дата прохож.</h3></th>
-				<th class="nosort"><h3>Комментарий</h3></th>
+				<th><b>Название</b></th>
+				<th><b>Оценка</b></th>
+				<th><b>Статус</b></th>
+				<th class="nosort"><b>Комментарий</b></th>
 			</tr>
 		</thead>
 		<tbody>
+		
+			<!--Добавлять сюда-->
+				
 			<tr>
-				<td>Disney’s Aladdin (1993)</td>
+				<td>Nightmare Creatures</td>
 				<td>7</td>
 				<td>Пройдено</td>
-				<td>14.03.18</td>
-				<td>Красочные карты, хороший гемплей, разнообразный. Дают полетать на ковре самолете.
-Очень крутая возможность "сохранения". После прохождения уровня дают код из картинок, который можно ввести в меню и "загрузится" на пройденный уровень, такой метод нужно было использовать всем разработчикам игр на NES, SNES и Sega. Пройдена с горячими сохранениями.</td>
+				<td></td>
 			</tr>
+			
+			<tr>
+				<td>Postal</td>
+				<td>0</td>
+				<td>Пройдено</td>
+				<td>Клянусь я пытался найти в этой игре хоть что-то интересное. Музыка, звуки, графика, геймплей, баланс... ничего нет.</td>
+			</tr>
+			
+			<tr>
+				<td>Project I.G.I.</td>
+				<td>8</td>
+				<td>Пройдено</td>
+				<td>Отличный шутер в духе блокбастеров девяностых. Хорошо всё, кроме бесконечных противников не стесняющихся появляться через 5 секунд после смерти у игрока за спиной.</td>
+			</tr>
+			
+			<tr>
+				<td>American McGee’s Alice</td>
+				<td>6</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Alien Trilogy</td>
+				<td>8</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Hitman: Codename 47</td>
+				<td>7</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Last Rites</td>
+				<td>7.5</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Shogo: Mobile Armor Division</td>
+				<td>8</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Nox</td>
+				<td>7.5</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Clive Barker’s Undying</td>
+				<td>6.5</td>
+				<td>Пройдено</td>
+				<td>Оружие в левой руке -_-</td>
+			</tr>
+			
+			<tr>
+				<td>SWAT 4</td>
+				<td>6.5</td>
+				<td>Пройдено</td>
+				<td>Всё круто но, алгоритм поведения союзников.. *facepalm*</td>
+			</tr>
+			
+			<tr>
+				<td>Chasm: The Rift</td>
+				<td>7.5</td>
+				<td>Пройдено</td>
+				<td>У этой игры только один минус - она преступно коротка.</td>
+			</tr>
+			
+			<tr>
+				<td>Far Cry</td>
+				<td>7.5</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>MDK</td>
+				<td>5.5</td>
+				<td>Пройдено</td>
+				<td>Хороший геймплей, интересные механики. Но визуально не понравилась совсем, да и снайперская винтовка (одна из ключевых особенностей игры) авторами не реализована в геймплее, без нее проще играть.</td>
+			</tr>
+			
+			<tr>
+				<td>Delta Force</td>
+				<td>8</td>
+				<td>Пройдено</td>
+				<td>Очень красивая игра, очень интересные и вариативные уровни. Не фанат военных симуляторов, но тут поставить оценку меньше рука не поднялась. Правда порой без слез не получится смотреть на поведение врага, могут стоять стрелять сквозь стену, или бежать уперевшись в забор.</td>
+			</tr>
+			
+			<tr>
+				<td>Turok</td>
+				<td>7</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Dungeon Keeper</td>
+				<td>9</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Star Wars: Shadows of the Empire</td>
+				<td>6</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Star Wars Jedi Knight: Dark Forces 2</td>
+				<td>7.5</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Star Wars: Dark Forces</td>
+				<td>9</td>
+				<td>Пройдено</td>
+				<td>На средней сложности.</td>
+			</tr>
+			
+			<tr>
+				<td>Star Wars: Knights of the Old Republic</td>
+				<td>6</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>The Thing</td>
+				<td>4</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Beyond Good & Evil</td>
+				<td>6</td>
+				<td>Пройдено</td>
+				<td>Понравились персонажи, особенно кабан, декорации очень интересные, забавные анимации. Не понравилась камера, местами просто дикий ужас. Сюжет, примитивен и банален (для игры которая "про сюжет"). Местами слишком много "коридоров".</td>
+			</tr>
+			
+			<tr>
+				<td>Quake Mission Pack 2: Dissolution of Eternity</td>
+				<td>6</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Quake Mission Pack 1: Scourge of Armagon</td>
+				<td>7</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Quake Mission Pack 1: Scourge of Armagon</td>
+				<td>9</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Deus Ex: Invisible War</td>
+				<td>4</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Deus Ex</td>
+				<td>8.5</td>
+				<td>Пройдено</td>
+				<td>Выбрана концовка The Benevolent Dictator (объединение с Гелиосом)</td>
+			</tr>
+			
+			<tr>
+				<td>Unreal</td>
+				<td>7</td>
+				<td>Дроп</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Hexen</td>
+				<td>9</td>
+				<td>Пройдено</td>
+				<td>Игра пройдена магом, нужно будет обязательно перепройти воином и клериком!</td>
+			</tr>
+			
+			<tr>
+				<td>Red Faction 2</td>
+				<td>7</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Red Faction</td>
+				<td>7</td>
+				<td>Пройдено</td>
+				<td>Поиграл в неё только в 2018, отличная игра, но хвалёная разрушаемость реализована только в начале игры, ближе к концу от нее нет и следа. Под конец игрока просто закидывают толпами ваншотящих врагов и летающими миниатюрными босами, не круто. А в целом, очень приятная механика, очень добротные анимации, дизайн и архитектура уровней.</td>
+			</tr>
+			
+			<tr>
+				<td>Strife</td>
+				<td>6</td>
+				<td>Пройдено</td>
+				<td>Из интересных моментов это - огромный открытый мир, покупка предметов у торговцев, апгрейды, диалоги, интереснейшая архитектура местности. Из минусов - в целом всё как-то серо, средне, игра визуально без изюминки.</td>
+			</tr>
+			
+			<tr>
+				<td>Shattered Steel</td>
+				<td>7.5</td>
+				<td>Пройдено</td>
+				<td>Шикарная игра про стальные двуногие машины (и не только) игра от Брайана Фарго и музыка в игре от Марка Моргана, поэтому плохой она быть ну просто не может. Вариативные миссии, разные машины в гараже, разблокируемые по ходу прогресса, куча оружия и девайсов.</td>
+			</tr>
+			
+			<tr>
+				<td>Killing Time</td>
+				<td>8</td>
+				<td>Пройдено</td>
+				<td>Эксклюзив консоли 3DO. Порт на PC значительно отличается от оригинала. Отличный шутер в очень интересном и очень атмосферном открытом мире. Качественный дизайн местности, яркие текстурки, интересные спрайты врагов, потрясающие звуки и музыка, сюжетные видео-вставки спрайтиами. Был бы шедевр если бы не ужасная карта, и небольшой выбор оружия.</td>
+			</tr>
+			
+			<tr>
+				<td>Driver: Parallel Lines</td>
+				<td>6</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Serious Sam: The Second Encounter</td>
+				<td>4.5</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Serious Sam: The First Encounter</td>
+				<td>5</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Theme Hospital</td>
+				<td>7</td>
+				<td>Дроп</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Sacred Gold</td>
+				<td>8.5</td>
+				<td>Пройдено</td>
+				<td>Было бы 9 если не вечные корни магов при попытках перемещения на дистанции.</td>
+			</tr>
+			
+			<tr>
+				<td>7th Legion</td>
+				<td>6.5</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Rise of the Triad</td>
+				<td>5</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Dangerous Dave Pack</td>
+				<td>8</td>
+				<td>Пройдено</td>
+				<td>Пак из четырёх частей.</td>
+			</tr>
+			
+			<tr>
+				<td>FATE</td>
+				<td>5</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Crusader: No Remorse</td>
+				<td>8</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Carmageddon 2: Carpocalypse Now</td>
+				<td>5</td>
+				<td>Дроп</td>
+				<td>Задания на время... этим всё сказано</td>
+			</tr>
+			
+			<tr>
+				<td>Carmageddon</td>
+				<td>7</td>
+				<td>Дроп</td>
+				<td>В какой-то момент надоело ездить по одним и тем же трассам.</td>
+			</tr>
+			
+			<tr>
+				<td>Arx Fatalis</td>
+				<td>6</td>
+				<td>Пройдено</td>
+				<td>Мотанина по запутанным подземельям. Очень неочевидные условия для выполненияю сюжетных задач. Но в целом механика игры приятная.</td>
+			</tr>
+			
+			<tr>
+				<td>Vampire: The Masquerade – Bloodlines</td>
+				<td>4</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Vampire: The Masquerade – Redemption</td>
+				<td>4</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Condemned: Criminal Origins</td>
+				<td>6.5</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>The Settlers 2</td>
+				<td>9</td>
+				<td>Пройдено</td>
+				<td>Лучшая часть в серии. Музыка.. такой больше нигде нет. Визуально - как карамельная сочная конфетка. Играется медитативно расслаблено, то что надо.</td>
+			</tr>
+			
+			<tr>
+				<td>Bloodrayne</td>
+				<td>4</td>
+				<td>Дроп</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Final Doom</td>
+				<td>8.5</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Doom 2</td>
+				<td>8</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>The Terminator: Future Shock</td>
+				<td>8</td>
+				<td>Дроп</td>
+				<td>Отличная игра. Приятная музыка, мозможность водить транспорт наземный и воздушный. Интересные сюжетные задачи, приятные открытые локации с возможностью заходить в здания\помещения. Дропнуто на последнем уровне.</td>
+			</tr>
+			
+			<tr>
+				<td>The Ultimate Doom</td>
+				<td>9</td>
+				<td>Пройдено</td>
+				<td>Моя любимая игра.</td>
+			</tr>
+			
+			<tr>
+				<td>CyberMage: Darklight Awakening</td>
+				<td>8.5</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Outlaws</td>
+				<td>8.5</td>
+				<td>Пройдено</td>
+				<td>В этой игре всё идеально, разве что детализация и анимация оружия скудноваты, в остальном яркий и ценный представитель своего жанра.</td>
+			</tr>
+			
+			<tr>
+				<td>Redneck Rampage</td>
+				<td>9</td>
+				<td>Пройдено</td>
+				<td>Симулятор пердежа. Колхозная романтика. Деревенщина с револьвером, который лечится после перестрелок дешевым бухлом, закусывая его чем попало. Играть ТОЛЬКО с cd-audio. В комплекте два крутейших дополнения. Играть обязательно!</td>
+			</tr>
+			
+			<tr>
+				<td>Blood II: The Chosen</td>
+				<td>4</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Blood</td>
+				<td>9</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Duke Caribbean: Life's a Beach</td>
+				<td>6</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Duke Nukem 3D</td>
+				<td>9</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Duke Nukem</td>
+				<td>6</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Heretic</td>
+				<td>9</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Shadow Warrior</td>
+				<td>8</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Dark Messiah of Might and Magic</td>
+				<td>8.5</td>
+				<td>Пройдено</td>
+				<td></td>
+			</tr>
+				
+			<!--Конец-->
 		</tbody>
 	</table>
-	* Пройдены на эмуляторе NesterJ на PSP, с горячими сохраненями.
-    </div>
 	
-	<div id="content_9"><!--Sega-->
-		<table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
-				<thead>
-					<tr>
-						<th width="170px"><h3>Название</h3></th>
-						<th width="70px"><h3>Оценка</h3></th>
-						<th width="60px"><h3>Статус</h3></th>
-						<th width="110px"><h3>Дата прохож.</h3></th>
-						<th class="nosort"><h3>Комментарий</h3></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Contra: Hard Corps (1994)</td>
-						<td>6.5</td>
-						<td>Пройдено</td>
-						<td>21.05.18</td>
-						<td>Очень динамичная игра. </td>
-					</tr>
-				</tbody>
-		</table>
-		* Пройдены на эмуляторе PicoDrive на PSP, с горячими сохраненями.
-	</div>
-	
-</div>
-Последнее обновление: 23.10.2018
+<div style="color:#626366; padding-top:10px">Последнее обновление: <b>30.10.2018</b> (обновления сверху).</div>
 
 <script src="sorttable.js"></script>
 </body>
